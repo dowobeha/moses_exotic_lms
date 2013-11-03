@@ -117,7 +117,12 @@ LanguageModel* CreateLanguageModel(LMImplementation lmImplementation
                            factorTypes[0]);
 #endif
     break;
-  case NPLM:
+    case MaxEntSRI:
+#ifdef LM_MAXENT_SRILM
+      lm = new LanguageModelMaxEntSRI();
+#endif
+      break;
+    case NPLM:
 #ifdef LM_NEURAL
     lm = new NeuralLM();
 #endif

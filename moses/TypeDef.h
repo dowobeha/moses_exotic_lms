@@ -124,6 +124,7 @@ enum LMImplementation {
   ,ORLM = 10
   ,LDHTLM = 11
   ,NPLM = 12
+  ,MaxEntSRI = 13
 };
 
 enum PhraseTableImplementation {
